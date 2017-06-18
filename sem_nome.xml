@@ -1,0 +1,218 @@
+<!--
+Tema: "Sem Nome"
+version: 1.0 (Beta)
+autor: Rafael (G8FaeLz)
+Tema Baseado no "Retrorama e Comic Book" para recalbox ambos do amigo Filipe Belo.
+-->
+
+<theme>
+    <formatVersion>4</formatVersion>
+	<view name="system, basic, detailed, video">
+
+		<helpsystem name="help">
+			<textColor>4f4f4f</textColor>
+			<fontPath>./art/Shaka_Pow.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<pos>0.030 0.9475</pos>
+			<iconColor>4f4f4f</iconColor>
+		</helpsystem>
+	
+	</view>
+	
+	<view name="system">
+	</view>	
+	<feature supported="carousel">
+
+		<view name="system">
+
+			<carousel name="systemcarousel">
+				<type>horizontal</type>
+				<color>eeeeeecc</color>
+				<logoScale>1.5</logoScale>
+				<maxLogoCount>3</maxLogoCount>
+			</carousel>
+		
+			<text name="systemInfo">
+				<backgroundColor>eeeeeecc</backgroundColor>
+				<color>000000</color>
+				<fontPath>./art/Shaka_Pow.ttf</fontPath>
+				<fontSize>0.035</fontSize>
+			</text>
+		
+		</view>
+	
+	</feature>		
+	<view name="basic, detailed, video">
+		
+		<textlist name="gamelist">
+			<selectorColor>d23c3d99</selectorColor>
+			<selectedColor>eeeeee</selectedColor>
+			<primaryColor>000000</primaryColor>
+			<secondaryColor>000000</secondaryColor>
+			<fontPath>./art/comic.otf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<pos>0.05 0.25</pos>
+			<size>0.395 0.67</size>
+			<alignment>center</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<fontSize>0.025</fontSize>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
+		
+	</view>
+	<view name="basic">
+	</view>
+
+	<view name="detailed">
+
+	      <image name="md_image">
+	      <origin>.5 .5</origin>
+	      <pos>.637 0.315</pos>
+	      <maxSize>0.20 0.40</maxSize>
+	      </image>
+		
+	</view>
+	
+	<feature supported="video">
+	
+		<view name="video">
+		
+			<image name="md_marquee">
+				<pos>1 1</pos>
+				<maxSize>0 0</maxSize>
+				<origin>0 0</origin>
+			</image>
+			
+			<image name="md_image">
+				<pos>0.918 0.525</pos>
+				<maxSize>0.127 0.17</maxSize>
+				<origin>0.5 0.5</origin>
+			</image>
+		
+		</view>
+		
+	</feature>	
+	<view name="detailed, video">
+
+		<text name="md_lbl_genre, md_genre, md_lbl_rating, md_rating, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_players, md_lbl_players, md_players">
+			<color>000000</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Shaka_Pow.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+		</text>
+		<text name="md_lbl_developer, md_developer, md_lbl_publisher, md_publisher">
+			<color>4f4f4f</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Shaka_Pow.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+		</text>
+
+		<text name="md_lbl_rating, md_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
+			<pos>1 1</pos>
+		</text>
+
+		<datetime name="md_lastplayed, md_releasedate">
+			<color>4f4f4f</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Shaka_Pow.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+		</datetime>
+
+		<datetime name="md_lastplayed">
+			<pos>1 1</pos>
+		</datetime>
+		
+		<datetime name="md_releasedate">
+			<pos>0.918 0.938</pos>
+			<size>0 0.033</size>
+			
+		</datetime>
+
+		<text name="md_lbl_genre">
+			<pos>0.765 0.14</pos>
+			<size>0 0.033</size>
+		</text>
+		
+		<text name="md_genre">
+			<pos>0.812 0.15</pos>
+			<size>0.16 0.02</size>
+		</text>
+
+		<text name="md_lbl_developer">
+			<pos>0.528 0.938</pos>
+			<size>0 0.033</size>
+		</text>
+		
+		<text name="md_developer">
+			<pos>0.72 0.938</pos>
+			<size>0 0.033</size>
+		</text>
+
+		<text name="md_lbl_players, md_players">
+			<pos>0.765 0.10</pos>
+			<size>0.09 0</size>
+		</text>
+
+		<text name="md_players">
+			<pos>0.830 0.10</pos>
+			<size>0.02 0</size>
+		</text>
+		
+		<text name="md_lbl_rating">
+	    <pos>0.765 0.06</pos>
+	    </text>
+		
+		<rating name="md_rating">
+         <pos>0.825 0.06</pos>
+         <size>0 0.038</size>
+         <filledPath>./art/star_filled.png</filledPath>
+         <unfilledPath>./art/star_empty.png</unfilledPath>
+        </rating>
+		
+		<text name="md_lbl_playcount">
+			<pos>0.775 0.18</pos>
+			<size>0.0 0.026</size>
+		</text>
+		
+		<text name="md_playcount">
+			<pos>0.865 0.18</pos>
+		    <size>0.0 0.026</size>
+		</text>
+
+		<text name="md_description">
+			<pos>0.54 0.793</pos>
+	        <size>0.413 0.135</size>
+			<color>000000</color>
+			<fontPath>./art/comic.otf</fontPath>
+			<fontSize>0.026</fontSize>
+	        <alignment>left</alignment>
+	        <forceUppercase>0</forceUppercase>
+	        <lineSpacing>1</lineSpacing>
+	    </text>
+		
+		<image name="md_hidden">
+			<pos>0.7 0.942</pos>
+			<path>./art/hidden.svg</path>
+			<maxSize>0.032 0.032</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>7d7d7d</color>
+		</image>
+		
+		<image name="md_kidgame">
+			<pos>0.75 0.942</pos>
+			<path>./art/kid.svg</path>
+			<maxSize>0.032 0.032</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>7d7d7d</color>
+		</image>
+		
+		<image name="md_favorite">
+			<pos>0.96 0.943</pos>
+			<path>./art/favorite.svg</path>
+			<maxSize>0.032 0.032</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>7d7d7d</color>
+		</image>
+
+	</view>
+</theme>
